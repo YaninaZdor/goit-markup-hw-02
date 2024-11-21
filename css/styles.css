@@ -117,8 +117,8 @@ body {
   text-decoration: none;
 }
 
-.header-address-contact:hover,
-.header-address-contact:focus {
+.header-address-contact > a:hover,
+.header-address-contact > a:focus {
   color: rgba(64, 75, 191, 1);
 }
 
