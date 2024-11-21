@@ -5,10 +5,9 @@ body {
 }
 
 .visually-hidden {
-  position: absolute;
+  width: 1px;
   left: -10000px;
   top: auto;
-  width: 1px;
   height: 1px;
   overflow: hidden;
 }
@@ -40,6 +39,8 @@ body {
 .main-text {
   color: rgba(67, 68, 85, 1);
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   font-weight: 400;
   padding: 4px 16px 32px;
   margin: 0;
@@ -87,12 +88,15 @@ body {
 .header-link {
   display: flex;
   color: rgba(46, 47, 66, 1);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
 }
 
 .header-link:hover,
+.header-link:focus,
 .header-link:active {
   color: rgba(64, 75, 191, 1);
 }
@@ -113,6 +117,8 @@ body {
   display: flex;
   color: rgba(67, 68, 85, 1);
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   font-style: normal;
   text-decoration: none;
 }
@@ -224,6 +230,7 @@ body {
   color: rgba(77, 90, 229, 1);
   font-size: 18px;
   font-weight: 700;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
