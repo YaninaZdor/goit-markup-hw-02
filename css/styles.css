@@ -2,12 +2,32 @@ body {
   font-family: Roboto, sans-serif;
   color: rgba(67, 68, 85, 1);
   background-color: white;
-  width: 100%;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
 }
 
-.h3-title {
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.first-title {
+  display: flex;
+  justify-content: center;
+  color: rgba(46, 47, 66, 1);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 72px;
+  margin-top: 0;
+}
+
+.second-title {
   color: rgba(46, 47, 66, 1);
   font-size: 20px;
   font-weight: 500;
@@ -25,6 +45,8 @@ body {
   margin: 0;
 }
 
+/* header */
+
 .header-container {
   display: flex;
   flex-direction: row;
@@ -38,9 +60,11 @@ body {
   font-family: 'Raleway', sans-serif;
   color: rgba(77, 90, 229, 1);
   font-size: 18px;
-  width: 700;
+  font-weight: 700;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   text-decoration: none;
+  text-transform: uppercase;
   margin-right: 76px;
 }
 
@@ -62,7 +86,7 @@ body {
 
 .header-link {
   display: flex;
-  color: rgba(67, 68, 85, 1);
+  color: rgba(46, 47, 66, 1);
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
@@ -93,9 +117,12 @@ body {
   text-decoration: none;
 }
 
-.header-address-contact > a:hover {
+.header-address-contact:hover,
+.header-address-contact:focus {
   color: rgba(64, 75, 191, 1);
 }
+
+/* hero-section */
 
 .hero-section {
   background-color: rgba(46, 47, 66, 1);
@@ -129,13 +156,12 @@ body {
   cursor: pointer;
 }
 
-.button-order:hover {
+.button-order:hover,
+.button-order:focus {
   background-color: rgba(64, 75, 191, 1);
 }
 
-.button-order:focus {
-  background-color: rgba(77, 90, 229, 1);
-}
+/* advantages */
 
 .advantages-list {
   display: flex;
@@ -145,23 +171,11 @@ body {
   gap: 24px;
 }
 
+/* team-section */
+
 .team-section {
   background-color: rgba(244, 244, 253, 1);
   padding: 120px 156px;
-}
-
-.h2-title {
-  display: flex;
-  justify-content: center;
-  color: rgba(46, 47, 66, 1);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  text-align: center;
-  margin-bottom: 72px;
-  margin-top: 0;
 }
 
 .team-cards {
@@ -179,6 +193,8 @@ body {
   background-color: white;
   text-align: center;
 }
+
+/* portfolio-section */
 
 .portfolio-section {
   background-color: white;
@@ -201,21 +217,27 @@ body {
   border: solid 1px rgba(231, 233, 252, 1);
 }
 
+/* footer */
+
 .logo-footer {
   font-family: 'Raleway', sans-serif;
   color: rgba(77, 90, 229, 1);
   font-size: 18px;
-  width: 700;
+  font-weight: 700;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
 .brand-logo-footer {
   color: rgba(244, 244, 253, 1);
+  color: #f4f4fd;
 }
 
 .footer-text {
   color: rgba(244, 244, 253, 1);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin: 0;
   padding-top: 16px;
 }
